@@ -10,15 +10,15 @@ const perguntas = [
         alternativas: [
             {
                 texto: "a) processo de contaminação do solo pela produção industrial.",
-                afirmacao: "afirmação"
+                afirmacao: ""
             },
             {
                 texto: "b) aumento da quantidade de vapor de água dissipado no ar.",
-                afirmacao: "afirmação"
+                afirmacao: ""
             },
             {
                 texto: "c) conjunto de dinâmicos atmosfericos influenciadas pela água.",
-                afirmacao: "afirmação"
+                afirmacao: ""
             },
         ]
     },
@@ -27,15 +27,15 @@ const perguntas = [
         alternativas: [
             {
                 texto: "a) Poluição do solo, poluição atmosférica e contaminação por metais pesados.",
-                afirmacao: "afirmação"
+                afirmacao: ""
             },
             {
                 texto: "b) Poluição atmosférica, queimadas e caça.",
-                afirmacao: "afirmação"
+                afirmacao: ""
             },
             {
                 texto: "c) assoreamento, desmatamento e queimadas.",
-                afirmacao: "afirmação"
+                afirmacao: ""
             }
         ]
     },
@@ -44,15 +44,15 @@ const perguntas = [
         alternativas: [
             {
                 texto: "a) queima de combustíveis fósseis, que libera grande quantidade de gases de efeito estufa.",
-                afirmacao: "afirmação"
+                afirmacao: ""
             },
             {
                 texto: "b) redução das geleiras presentes nos polos do planeta e nos topos das montanhas.",
-                afirmacao: "afirmação"
+                afirmacao: ""
             },
             {
                 texto: "c) queimadas e desmatamento de áreas florestais.",
-                afirmacao: "afirmação"
+                afirmacao: ""
             }
         ]
     },
@@ -85,13 +85,13 @@ function mostraAlternativas(){
 
 function respostaSelecionada(opcaoSelecionada) {
     const afirmacoes = opcaoSelecionada.afirmacao;
-    historiaFinal += afirmacoes + " ";
+    historiaFinal = afirmacoes + "O meio ambiente pode estar enfrentando desafios significativos, mas também pode haver avanços notáveis na sustentabilidade e na conservação como, mudanças climáticas, energias renováveis, biodiversidade, tecnologia verde, conscientização global, políticas ambientais.";
     atual++;
     mostraPergunta();
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = "Em 2049..."
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
