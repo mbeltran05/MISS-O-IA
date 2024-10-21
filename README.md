@@ -1,1 +1,1 @@
-# Missao=-IA
+# Missao-IA
